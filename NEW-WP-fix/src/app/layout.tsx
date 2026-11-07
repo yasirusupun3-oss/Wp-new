@@ -31,8 +31,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   other: {
-    // HilltopAds site-ownership verification tag.
-    "73f796404bab0afead7fa20af7792cc3d4bc32a0": "73f796404bab0afead7fa20af7792cc3d4bc32a0",
+    <meta name="2e89cc737103776d6a908338045faa73b00df391" content="2e89cc737103776d6a908338045faa73b00df391" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
   },
 };
