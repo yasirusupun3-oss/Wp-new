@@ -31,7 +31,6 @@ export const metadata: Metadata = {
     type: "website",
   },
   other: {
-    <meta name="2e89cc737103776d6a908338045faa73b00df391" content="2e89cc737103776d6a908338045faa73b00df391" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
   },
 };
@@ -52,6 +51,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
+      <meta name="2e89cc737103776d6a908338045faa73b00df391" content="2e89cc737103776d6a908338045faa73b00df391" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
       >
