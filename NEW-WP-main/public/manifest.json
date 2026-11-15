@@ -1,0 +1,17 @@
+{
+  "name": "Wp-earn-money",
+  "short_name": "Wp-earn-money",
+  "description": "A WhatsApp-inspired mobile-first PWA with live streaming, wallet, and 3D design elements.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111B21",
+  "theme_color": "#111B21",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
