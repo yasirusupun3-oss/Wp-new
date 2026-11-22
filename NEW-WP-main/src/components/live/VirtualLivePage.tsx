@@ -37,7 +37,7 @@ export const VIRTUAL_GIRLS = [
     id: 'virtual_live_02',
     name: 'දිනාරා',
     color: '#A855F7',
-    videoUrl: PEXELS_VIDEOS[https://utiegh775utdcasa.public.blob.vercel-storage.com/Big_Asian_tits_3.mp4],
+    videoUrl: https://utiegh775utdcasa.public.blob.vercel-storage.com/Big_Asian_tits_3.mp4[1],
     viewerBase: 83,
     title: 'Dancing & chilling 💃',
     greetings: ['හේ! 💃', 'Fun time!! 🎉', 'Vibe එක real ✨', 'ආපු ඔක්කොට ස්තූතියි! 🔥'],
