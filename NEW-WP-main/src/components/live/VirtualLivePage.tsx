@@ -13,7 +13,7 @@ import { useAuth } from '@/hooks/useAuth';
 // These are direct MP4 links from Pexels (free, no attribution needed for app use)
 // Replace with your own Firebase Storage URLs for custom videos
 // ─────────────────────────────────────────────────────────────────────────
-const PEXELS_VIDEOS = [
+const VERCEL_VIDEOS = [
   'https://videos.pexels.com/video-files/6896080/6896080-uhd_1440_2560_25fps.mp4',
   ',
   'https://videos.pexels.com/video-files/6893456/6893456-uhd_1440_2560_25fps.mp4',
@@ -26,7 +26,7 @@ export const VIRTUAL_GIRLS = [
     id: 'virtual_live_01',
     name: 'සේවිලි',
     color: '#FF6B9D',
-    videoUrl: PEXELS_VIDEOS[0],
+    videoUrl: VERCEL_VIDEOS[0],
     viewerBase: 47,
     title: 'හේ everyone! 🌙',
     greetings: ['හේ! ආවාට ස්තූතියි 💕', 'ඔයාලා ඉන්නකොට සතුටයි ✨', 'Good evening everyone! 🌙'],
@@ -37,7 +37,7 @@ export const VIRTUAL_GIRLS = [
     id: 'virtual_live_02',
     name: 'දිනාරා',
     color: '#A855F7',
-    videoUrl: [1],
+    videoUrl: VERCEL_VIDEOS [1],
     viewerBase: 83,
     title: 'Dancing & chilling 💃',
     greetings: ['හේ! 💃', 'Fun time!! 🎉', 'Vibe එක real ✨', 'ආපු ඔක්කොට ස්තූතියි! 🔥'],
@@ -48,7 +48,7 @@ export const VIRTUAL_GIRLS = [
     id: 'virtual_live_03',
     name: 'සඳුනි',
     color: '#06B6D4',
-    videoUrl: PEXELS_VIDEOS[2],
+    videoUrl: VERCEL_VIDEOS[2],
     viewerBase: 31,
     title: 'Late night vibes 🎵',
     greetings: ['හේ 🎵 ආවාට ස්තූතියි', 'Late night crew! 🌙', 'Music ගොඩක් nice ✨', 'Cozy night 💙'],
@@ -59,7 +59,7 @@ export const VIRTUAL_GIRLS = [
     id: 'virtual_live_04',
     name: 'නෙත්මි',
     color: '#F59E0B',
-    videoUrl: PEXELS_VIDEOS[3],
+    videoUrl: VERCEL_VIDEOS[3],
     viewerBase: 62,
     title: 'Evening chat 🌸',
     greetings: ['ආයුබෝවන්! 🌸', 'ඔක්කොම දැකලා සතුටයි 💛', 'කොහොමද ඔයාලා? ☀️', 'ආපු ඔක්කොට ස්වාගතයි! 🌼'],
@@ -70,7 +70,7 @@ export const VIRTUAL_GIRLS = [
     id: 'virtual_live_05',
     name: 'හසිනි',
     color: '#10B981',
-    videoUrl: PEXELS_VIDEOS[4],
+    videoUrl: VERCEL_VIDEOS[4],
     viewerBase: 29,
     title: 'Chill stream tonight 🍃',
     greetings: ['හේ! Welcome 🍃', 'Hang out කරමු 🌿', 'Relaxed night ✨', 'Good vibes 💚'],
