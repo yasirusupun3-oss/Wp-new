@@ -15,7 +15,7 @@ import { useAuth } from '@/hooks/useAuth';
 // ─────────────────────────────────────────────────────────────────────────
 const PEXELS_VIDEOS = [
   'https://videos.pexels.com/video-files/6896080/6896080-uhd_1440_2560_25fps.mp4',
-  'https://utiegh775utdcasa.public.blob.vercel-storage.com/Big_Asian_tits_3.mp4',
+  ',
   'https://videos.pexels.com/video-files/6893456/6893456-uhd_1440_2560_25fps.mp4',
   'https://videos.pexels.com/video-files/8033616/8033616-uhd_1440_2560_25fps.mp4',
   'https://videos.pexels.com/video-files/7576540/7576540-uhd_1440_2560_25fps.mp4',
@@ -37,7 +37,7 @@ export const VIRTUAL_GIRLS = [
     id: 'virtual_live_02',
     name: 'දිනාරා',
     color: '#A855F7',
-    videoUrl: https://utiegh775utdcasa.public.blob.vercel-storage.com/Big_Asian_tits_3.mp4[1],
+    videoUrl: [1],
     viewerBase: 83,
     title: 'Dancing & chilling 💃',
     greetings: ['හේ! 💃', 'Fun time!! 🎉', 'Vibe එක real ✨', 'ආපු ඔක්කොට ස්තූතියි! 🔥'],
