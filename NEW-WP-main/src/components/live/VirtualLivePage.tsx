@@ -16,9 +16,9 @@ import { useAuth } from '@/hooks/useAuth';
 const VERCEL_VIDEOS = [
   'https://videos.pexels.com/video-files/6896080/6896080-uhd_1440_2560_25fps.mp4',
   ',
-  'https://videos.pexels.com/video-files/6893456/6893456-uhd_1440_2560_25fps.mp4',
-  'https://videos.pexels.com/video-files/8033616/8033616-uhd_1440_2560_25fps.mp4',
-  'https://videos.pexels.com/video-files/7576540/7576540-uhd_1440_2560_25fps.mp4',
+  'https://VERCEL_VIDEOS.com/video-files/6893456/6893456-uhd_1440_2560_25fps.mp4',
+  'https://VERCEL_VIDEOS.com/video-files/8033616/8033616-uhd_1440_2560_25fps.mp4',
+  'https://VERCEL_VIDEOS.com/video-files/7576540/7576540-uhd_1440_2560_25fps.mp4',
 ];
 
 export const VIRTUAL_GIRLS = [
