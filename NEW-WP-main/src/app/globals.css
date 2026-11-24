@@ -1,0 +1,499 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+/* ═══════════════════════════════════════════════════════
+   WhatsApp Light Theme (default)
+   ═══════════════════════════════════════════════════════ */
+:root {
+  --radius: 0.625rem;
+  --background: #FFFFFF;
+  --foreground: #111B21;
+  --card: #FFFFFF;
+  --card-foreground: #111B21;
+  --popover: #FFFFFF;
+  --popover-foreground: #111B21;
+  --primary: #075E54;
+  --primary-foreground: #FFFFFF;
+  --secondary: #128C7E;
+  --secondary-foreground: #FFFFFF;
+  --muted: #F0F2F5;
+  --muted-foreground: #667781;
+  --accent: #25D366;
+  --accent-foreground: #FFFFFF;
+  --destructive: #EA4335;
+  --border: #E9EDEF;
+  --input: #E9EDEF;
+  --ring: #25D366;
+  --chart-1: #075E54;
+  --chart-2: #128C7E;
+  --chart-3: #25D366;
+  --chart-4: #34B7F1;
+  --chart-5: #FFD700;
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #111B21;
+  --sidebar-primary: #075E54;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #F0F2F5;
+  --sidebar-accent-foreground: #111B21;
+  --sidebar-border: #E9EDEF;
+  --sidebar-ring: #25D366;
+
+  /* WhatsApp custom colors */
+  --wa-header: #075E54;
+  --wa-secondary: #128C7E;
+  --wa-accent: #25D366;
+  --wa-light-green: #DCF8C6;
+  --wa-chat-bg: #ECE5DD;
+  --wa-outgoing: #DCF8C6;
+  --wa-incoming: #FFFFFF;
+  --wa-gold: #FFD700;
+  --wa-danger: #EA4335;
+}
+
+/* ═══════════════════════════════════════════════════════
+   WhatsApp Dark Theme
+   ═══════════════════════════════════════════════════════ */
+.dark {
+  --background: #111B21;
+  --foreground: #E9EDEF;
+  --card: #1F2C34;
+  --card-foreground: #E9EDEF;
+  --popover: #1F2C34;
+  --popover-foreground: #E9EDEF;
+  --primary: #00A884;
+  --primary-foreground: #111B21;
+  --secondary: #128C7E;
+  --secondary-foreground: #E9EDEF;
+  --muted: #233138;
+  --muted-foreground: #8696A0;
+  --accent: #00A884;
+  --accent-foreground: #111B21;
+  --destructive: #F15C6D;
+  --border: #2A3942;
+  --input: #2A3942;
+  --ring: #00A884;
+  --chart-1: #00A884;
+  --chart-2: #128C7E;
+  --chart-3: #25D366;
+  --chart-4: #53BDEB;
+  --chart-5: #FFD700;
+  --sidebar: #1F2C34;
+  --sidebar-foreground: #E9EDEF;
+  --sidebar-primary: #00A884;
+  --sidebar-primary-foreground: #111B21;
+  --sidebar-accent: #233138;
+  --sidebar-accent-foreground: #E9EDEF;
+  --sidebar-border: #2A3942;
+  --sidebar-ring: #00A884;
+
+  /* WhatsApp dark custom colors */
+  --wa-header: #1F2C34;
+  --wa-secondary: #128C7E;
+  --wa-accent: #00A884;
+  --wa-light-green: #005C4B;
+  --wa-chat-bg: #0B141A;
+  --wa-outgoing: #005C4B;
+  --wa-incoming: #1F2C34;
+  --wa-gold: #FFD700;
+  --wa-danger: #F15C6D;
+}
+
+/* ═══════════════════════════════════════════════════════
+   Base Layer
+   ═══════════════════════════════════════════════════════ */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    box-sizing: border-box;
+  }
+  html {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    overscroll-behavior: none;
+    /* Safe area insets for iOS */
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+}
+
+/* ═══════════════════════════════════════════════════════
+   Keyframe Animations
+   ═══════════════════════════════════════════════════════ */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotateX(2deg) rotateY(-2deg);
+  }
+  50% {
+    transform: translateY(-10px) rotateX(-2deg) rotateY(2deg);
+  }
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(0, 168, 132, 0.4), 0 0 40px rgba(0, 168, 132, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(0, 168, 132, 0.6), 0 0 60px rgba(0, 168, 132, 0.2);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes gift-bounce {
+  0% {
+    opacity: 0;
+    transform: translateY(100%) scale(0.3) rotateZ(-15deg);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(-10%) scale(1.1) rotateZ(5deg);
+  }
+  60% {
+    transform: translateY(0%) scale(0.95) rotateZ(-2deg);
+  }
+  80% {
+    transform: translateY(-5%) scale(1.02) rotateZ(1deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%) scale(1) rotateZ(0deg);
+  }
+}
+
+@keyframes coin-spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes live-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.5);
+  }
+}
+
+@keyframes border-glow {
+  0%, 100% {
+    border-color: rgba(0, 168, 132, 0.3);
+  }
+  50% {
+    border-color: rgba(0, 168, 132, 0.7);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════
+   Glassmorphism Utilities
+   ═══════════════════════════════════════════════════════ */
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.dark .glass {
+  background: rgba(17, 27, 33, 0.6);
+  border: 1px solid rgba(42, 57, 66, 0.5);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-teal {
+  background: rgba(0, 168, 132, 0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 168, 132, 0.3);
+}
+
+/* ═══════════════════════════════════════════════════════
+   3D Transform Utilities
+   ═══════════════════════════════════════════════════════ */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.rotate-y-5 {
+  transform: rotateY(5deg);
+}
+
+.float-animation {
+  animation: float 4s ease-in-out infinite;
+}
+
+.glow-teal {
+  animation: glow-pulse 2s ease-in-out infinite;
+}
+
+.glow-gold {
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.4), 0 0 40px rgba(255, 215, 0, 0.15);
+  animation: glow-pulse-gold 2s ease-in-out infinite;
+}
+
+@keyframes glow-pulse-gold {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.4), 0 0 40px rgba(255, 215, 0, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.6), 0 0 60px rgba(255, 215, 0, 0.25);
+  }
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* ═══════════════════════════════════════════════════════
+   WhatsApp Chat Bubbles
+   ═══════════════════════════════════════════════════════ */
+.chat-bubble-outgoing {
+  background: var(--wa-outgoing);
+  border-radius: 8px 0 8px 8px;
+  position: relative;
+}
+
+.chat-bubble-outgoing::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -8px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid var(--wa-outgoing);
+  border-left: 8px solid transparent;
+}
+
+.chat-bubble-incoming {
+  background: var(--wa-incoming);
+  border-radius: 0 8px 8px 8px;
+  position: relative;
+}
+
+.chat-bubble-incoming::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -8px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid var(--wa-incoming);
+  border-right: 8px solid transparent;
+}
+
+/* ═══════════════════════════════════════════════════════
+   WhatsApp Chat Background Pattern
+   ═══════════════════════════════════════════════════════ */
+.chat-bg-pattern {
+  background-color: var(--wa-chat-bg);
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(0, 168, 132, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(0, 168, 132, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.02) 0%, transparent 70%),
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.dark .chat-bg-pattern {
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(0, 168, 132, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(0, 168, 132, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.015) 0%, transparent 70%),
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.015'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* ═══════════════════════════════════════════════════════
+   Custom Scrollbar (Mobile-first)
+   ═══════════════════════════════════════════════════════ */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(134, 150, 160, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(134, 150, 160, 0.5);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(134, 150, 160, 0.3) transparent;
+}
+
+/* ═══════════════════════════════════════════════════════
+   WhatsApp Header Gradient
+   ═══════════════════════════════════════════════════════ */
+.wa-header-gradient {
+  background: linear-gradient(135deg, var(--wa-header) 0%, var(--wa-secondary) 100%);
+}
+
+.dark .wa-header-gradient {
+  background: linear-gradient(135deg, var(--wa-header) 0%, rgba(18, 140, 126, 0.6) 100%);
+}
+
+/* ═══════════════════════════════════════════════════════
+   Live Pulse Dot
+   ═══════════════════════════════════════════════════════ */
+.live-pulse-dot {
+  animation: live-pulse 1.5s ease-in-out infinite;
+}
+
+/* ═══════════════════════════════════════════════════════
+   Animation Utilities
+   ═══════════════════════════════════════════════════════ */
+.animate-slide-up {
+  animation: slide-up 0.3s ease-out forwards;
+}
+
+.animate-gift-bounce {
+  animation: gift-bounce 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.animate-coin-spin {
+  animation: coin-spin 2s linear infinite;
+}
+
+.animate-border-glow {
+  animation: border-glow 2s ease-in-out infinite;
+}
+
+/* ═══════════════════════════════════════════════════════
+   Bottom Nav Safe Area
+   ═══════════════════════════════════════════════════════ */
+.safe-bottom {
+  padding-bottom: calc(0.5rem + env(safe-area-inset-bottom, 0px));
+}
+
+.safe-top {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+/* ═══════════════════════════════════════════════════════
+   Touch Target
+   ═══════════════════════════════════════════════════════ */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* ═══════════════════════════════════════════════════════
+   3D Card Hover Effect
+   ═══════════════════════════════════════════════════════ */
+.card-3d-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-3d-hover:hover {
+  transform: translateY(-4px) rotateX(2deg);
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.15),
+    0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ═══════════════════════════════════════════════════════
+   Gradient Text
+   ═══════════════════════════════════════════════════════ */
+.text-gradient-teal {
+  background: linear-gradient(135deg, #00A884, #25D366);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
