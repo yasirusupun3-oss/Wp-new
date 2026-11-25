@@ -14,13 +14,12 @@ import { useAuth } from '@/hooks/useAuth';
 // Replace with your own Firebase Storage URLs for custom videos
 // ─────────────────────────────────────────────────────────────────────────
 // ── Vercel Blob Storage Video URLs ───────────────────────────────────────
-// Vercel → Storage → Blob → Browse → file click → URL copy කරලා paste කරන්න
 const PEXELS_VIDEOS = [
-  'YOUR_VERCEL_BLOB_URL_1', https://utiegh775utdcasa.public.blob.vercel-storage.com/Big_Asian_tits_3.mp4
-  'YOUR_VERCEL_BLOB_URL_2', // දිනාරා — මෙතන URL paste කරන්න
-  'YOUR_VERCEL_BLOB_URL_3', // සඳුනි — මෙතන URL paste කරන්න
-  'YOUR_VERCEL_BLOB_URL_4', // නෙත්මි — මෙතන URL paste කරන්න
-  'YOUR_VERCEL_BLOB_URL_5', // හසිනි — මෙතන URL paste කරන්න
+  'YOUR_VERCEL_BLOB_URL_1',https://utiegh775utdcasa.public.blob.vercel-storage.com/Big_Asian_tits_3.mp4
+  'YOUR_VERCEL_BLOB_URL_2',
+  'YOUR_VERCEL_BLOB_URL_3',
+  'YOUR_VERCEL_BLOB_URL_4',
+  'YOUR_VERCEL_BLOB_URL_5',
 ];
 
 export const VIRTUAL_GIRLS = [
